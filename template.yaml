@@ -21,9 +21,9 @@ Resources:
         timerBC6C4571:
           Type: Schedule
           Properties:
-            Schedule: cron(0 3 * * ? *)
+            Schedule: rate(2 minutes)
           Metadata:
-            StackeryName: Every day at 3 am (UTC)
+            StackeryName: Every 2 minutes
     Metadata:
       StackeryName: myCronJob
 Parameters:
